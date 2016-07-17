@@ -1,0 +1,48 @@
+body {
+	margin: 0;
+}
+.container, .yellow-wrap {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.item {
+	-ms-flex: 1 100%;
+	flex: 1 100%;
+	margin-bottom: 15px;
+}
+.item:not(.red) {
+	-ms-flex-order: 2;
+	order: 2;
+}
+.item:empty, .yellow-box:first-child {
+	height: 300px;
+}
+.yellow-box.hide {
+	display: none;
+}
+.item.red {
+	height: 60px;
+	background: red;
+}
+.item.orange {
+	background: orange;
+}
+.yellow-wrap .yellow-box {
+	-ms-flex: 1 100%;
+	flex: 1 100%;
+	background: yellow;
+	text-align: center;
+}
+.item.green {
+	background: green;
+}
+.item.blue {
+	background: blue;
+}
+.item.pink {
+	background: pink;
+}
